@@ -1,38 +1,37 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Front-End Software Engineer',
-  siteDescription:
-    'Design-minded software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
+  siteTitle: 'David Hahn | Passionated Software Engineer',
+  siteDescription: 'Passionated Software Engineer. Freelancer. Smarthome Enthusiast.',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
-  siteUrl: 'https://brittanychiang.com',
+    'David Hahn, David, Hahn, davidka, software engineer, front-end engineer, web developer, javascript, germany',
+  siteUrl: 'https://davidhahn.software',
   siteLanguage: 'en_US',
-  siteImage: 'https://brittanychiang.com/og.png',
+  siteImage: '',
 
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+  googleVerification: '1aWqJQFJZbSj1ouflqWfBr6_bbCDf9VRmku3YQWCT9M',
 
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
+  name: 'David Hahn',
+  location: 'Bramsche, Germany',
+  email: 'info@davidhahn.software',
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/bchiang7/',
+      url: 'https://github.com/davidka',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7/',
+      url: 'https://www.linkedin.com/in/david-hahn-2b677383/',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7/',
+      name: 'Xing',
+      url: 'https://www.xing.com/profile/David_Hahn10',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7/',
+      name: 'Keybase',
+      url: 'https://keybase.io/davidka',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/davidkah',
     },
   ],
 
@@ -55,8 +54,8 @@ module.exports = {
     },
   ],
 
-  twitterHandle: '@bchiang7',
-  googleAnalyticsID: 'UA-45666519-2',
+  twitterHandle: '@davidkah',
+  googleAnalyticsID: 'UA-5663375-2',
 
   headerHeight: 100,
 
