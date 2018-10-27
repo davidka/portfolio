@@ -1,21 +1,23 @@
 ---
 title: 'About Me'
-avatar: './me.jpg'
+avatar: './avatar.png'
 skills:
   - JavaScript
   - TypeScript
   - HTML & CSS
-  - React
-  - Gatsby
-  - Ember
-  - Jekyll
-  - Craft
-  - Wordpress
-  - Timber
+  - React/Redux
+  - Scrum
+  - Gitlab CI
+  - Blockchain
+  - NodeJS
+  - Docker
+  - Java
 ---
 
-Hey there! I'm a software engineer who enjoys working at the intersection of engineering and design. I build exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces while also being scalable and efficient behind the scenes.
+I have 10+ years of experience as a software engineer, and have worked at both small startups and large organizations. While I'm a proficient full-stack developer, my expertise is in building scalable web- and cross-plattform applications based on web technologies.
 
-I graduated from [Northeastern University](https://www.ccis.northeastern.edu/) with my bachelor's in 2018, and for the past 5+ years, I've been honing my skills in web development. I enjoy constantly learning and improving my skills with the technologies that keep evolving in this ever-changing field!
+I'm a passionated agile software developer who has built software products from the ground up, provided guidance for teams to introduce agile methods and enabled customers realize their product vision.
+
+I'm motivated by product success, not technology for technology's sake.
 
 Here's a few things I'm experienced with:
