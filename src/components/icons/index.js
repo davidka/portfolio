@@ -7,6 +7,7 @@ import IconExternal from './external';
 import IconFolder from './folder';
 import IconLocation from './location';
 import IconKeybase from './keybase';
+import IconXing from './xing';
 
 export {
   IconLogo,
@@ -18,4 +19,5 @@ export {
   IconFolder,
   IconLocation,
   IconKeybase,
+  IconXing,
 };

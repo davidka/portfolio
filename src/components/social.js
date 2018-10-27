@@ -3,7 +3,14 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { socialMedia } from '../config';
 
-import { IconGithub, IconLinkedin, IconInstagram, IconTwitter, IconKeybase } from './icons';
+import {
+  IconGithub,
+  IconLinkedin,
+  IconInstagram,
+  IconTwitter,
+  IconKeybase,
+  IconXing,
+} from './icons';
 
 import styled from 'styled-components';
 import { theme, media } from '../styles';
@@ -79,6 +86,8 @@ class Social extends Component {
                           <IconTwitter />
                         ) : name === 'Keybase' ? (
                           <IconKeybase />
+                        ) : name === 'Xing' ? (
+                          <IconXing />
                         ) : (
                           <IconGithub />
                         )}
