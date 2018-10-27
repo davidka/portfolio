@@ -55,7 +55,6 @@ module.exports = {
   ],
 
   twitterHandle: '@davidkah',
-  googleAnalyticsID: 'UA-5663375-2',
 
   headerHeight: 100,
 
