@@ -2,7 +2,7 @@ import React from 'react';
 
 import { socialMedia } from '../config';
 
-import { IconGithub, IconLinkedin, IconCodepen, IconInstagram, IconTwitter } from './icons';
+import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from './icons';
 
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
@@ -60,8 +60,6 @@ const Footer = () => (
                   <IconGithub />
                 ) : name === 'Linkedin' ? (
                   <IconLinkedin />
-                ) : name === 'Codepen' ? (
-                  <IconCodepen />
                 ) : name === 'Instagram' ? (
                   <IconInstagram />
                 ) : name === 'Twitter' ? (
