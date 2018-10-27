@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'brittany-chiang-v4',
-        short_name: 'v4',
+        name: 'david-hahn-portfolio',
+        short_name: 'dhahn',
         start_url: '/',
         background_color: '#020c1b',
         theme_color: '#0a192f',
@@ -53,12 +53,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: config.googleAnalyticsID,
       },
     },
   ],
