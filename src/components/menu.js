@@ -32,7 +32,7 @@ const Sidebar = styled.div`
   position: relative;
   right: 0;
   margin-left: auto;
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   box-shadow: -2px 0px 4px ${theme.colors.transNavy};
   ${media.thone`padding: 25px;`};
   ${media.phablet`width: 75vw;`};

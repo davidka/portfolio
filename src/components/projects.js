@@ -99,7 +99,7 @@ const TechList = styled.ul`
   flex-wrap: wrap;
   margin-top: 20px;
   li {
-    font-family: ${theme.fonts.SFMono};
+    font-family: ${theme.fonts.SourceCodePro};
     font-size: ${theme.fontSizes.xsmall};
     color: ${theme.colors.lightSlate};
     line-height: 2;

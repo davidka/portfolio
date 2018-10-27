@@ -20,7 +20,7 @@ const GreenHeading = styled(Heading)`
   display: block;
   color: ${theme.colors.green};
   font-size: ${theme.fontSizes.medium};
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   font-weight: normal;
   margin-bottom: 20px;
   justify-content: center;

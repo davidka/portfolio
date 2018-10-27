@@ -32,7 +32,7 @@ const FeaturedLabel = styled.h4`
   font-size: ${theme.fontSizes.smallish};
   font-weight: normal;
   color: ${theme.colors.green};
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   margin-top: 10px;
   padding-top: 0;
 `;
@@ -70,7 +70,7 @@ const TechList = styled.ul`
   flex-wrap: wrap;
   margin: 25px 0 10px;
   li {
-    font-family: ${theme.fonts.SFMono};
+    font-family: ${theme.fonts.SourceCodePro};
     font-size: ${theme.fontSizes.smallish};
     color: ${theme.colors.lightSlate};
     margin-right: ${theme.margin};

@@ -42,7 +42,7 @@ const Tab = styled.button`
   border-left: 2px solid ${theme.colors.darkGrey};
   text-align: left;
   white-space: nowrap;
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   font-size: ${theme.fontSizes.smallish};
   color: ${props => (props.isActive ? theme.colors.green : theme.colors.lightGrey)};
   ${media.tablet`padding: 0 15px 2px;`};
@@ -136,7 +136,7 @@ const Company = styled.span`
   color: ${theme.colors.green};
 `;
 const JobDetails = styled.h5`
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   font-size: ${theme.fontSizes.smallish};
   font-weight: normal;
   letter-spacing: 0.5px;

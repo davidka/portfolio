@@ -1,135 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 import media from './media';
-import * as fonts from './fonts';
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreLightWOFF2}) format('woff2'),
-    url(${fonts.CalibreLightWOFF}) format('woff'),
-    url(${fonts.CalibreLightTTF}) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreLightItalicWOFF2}) format('woff2'),
-    url(${fonts.CalibreLightItalicWOFF}) format('woff'),
-    url(${fonts.CalibreLightItalicTTF}) format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreRegularWOFF2}) format('woff2'),
-    url(${fonts.CalibreRegularWOFF}) format('woff'),
-    url(${fonts.CalibreRegularTTF}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreRegularItalicWOFF2}) format('woff2'),
-    url(${fonts.CalibreRegularItalicWOFF}) format('woff'),
-    url(${fonts.CalibreRegularItalicTTF}) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreMediumWOFF2}) format('woff2'),
-    url(${fonts.CalibreMediumWOFF}) format('woff'),
-    url(${fonts.CalibreMediumTTF}) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreMediumItalicWOFF2}) format('woff2'),
-    url(${fonts.CalibreMediumItalicWOFF}) format('woff'),
-    url(${fonts.CalibreMediumItalicTTF}) format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreSemiboldWOFF2}) format('woff2'),
-    url(${fonts.CalibreSemiboldWOFF}) format('woff'),
-    url(${fonts.CalibreSemiboldTTF}) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fonts.CalibreSemiboldItalicWOFF2}) format('woff2'),
-    url(${fonts.CalibreSemiboldItalicWOFF}) format('woff'),
-    url(${fonts.CalibreSemiboldItalicTTF}) format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoRegularWOFF2}) format('woff2'),
-    url(${fonts.SFMonoRegularWOFF}) format('woff'),
-    url(${fonts.SFMonoRegularTTF}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoRegularItalicWOFF2}) format('woff2'),
-    url(${fonts.SFMonoRegularItalicWOFF}) format('woff'),
-    url(${fonts.SFMonoRegularItalicTTF}) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoMediumWOFF2}) format('woff2'),
-    url(${fonts.SFMonoMediumWOFF}) format('woff'),
-    url(${fonts.SFMonoMediumTTF}) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoMediumItalicWOFF2}) format('woff2'),
-    url(${fonts.SFMonoMediumItalicWOFF}) format('woff'),
-    url(${fonts.SFMonoMediumItalicTTF}) format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoSemiboldWOFF2}) format('woff2'),
-    url(${fonts.SFMonoSemiboldWOFF}) format('woff'),
-    url(${fonts.SFMonoSemiboldTTF}) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fonts.SFMonoSemiboldItalicWOFF2}) format('woff2'),
-    url(${fonts.SFMonoSemiboldItalicWOFF}) format('woff'),
-    url(${fonts.SFMonoSemiboldItalicTTF}) format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: auto;
-  }
 
   html {
     box-sizing: border-box;
@@ -152,8 +25,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.navy};
     color: ${theme.colors.slate};
     line-height: 1.25;
-    font-family: ${theme.fonts.Calibre};
-    font-size: ${theme.fontSizes.xlarge};
+    font-family: ${theme.fonts.OpenSans};
+    font-size: ${theme.fontSizes.large};
     ${media.phablet`font-size: ${theme.fontSizes.large};`}
 
     &.hidden {
@@ -179,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
   h3,
   h4,
   h5 {
-    font-weight: 600;
+    font-weight: 700;
     color: ${theme.colors.white};
     margin: 0 0 10px 0;
   }

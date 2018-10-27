@@ -13,10 +13,11 @@ const Heading = styled.h3`
   ${media.tablet`font-size: 24px;`};
 
   &:before {
+    margin-top: 10px;
     counter-increment: section;
     content: '0' counter(section) '.';
     margin-right: 10px;
-    font-family: ${theme.fonts.SFMono};
+    font-family: ${theme.fonts.SourceCodePro};
     font-weight: normal;
     color: ${theme.colors.green};
     font-size: ${theme.fontSizes.xlarge};
@@ -26,6 +27,7 @@ const Heading = styled.h3`
   }
 
   &:after {
+    margin-top: 10px;
     content: '';
     display: block;
     height: 1px;

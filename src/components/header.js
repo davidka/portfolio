@@ -39,7 +39,7 @@ const HeaderContainer = styled.header`
 `;
 const Navbar = styled(Nav)`
   ${mixins.flexBetween};
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   color: ${theme.colors.lightestSlate};
   counter-reset: item 0;
   position: relative;

@@ -13,7 +13,7 @@ const MainContainer = styled(Main)`
 `;
 const Title = styled.h1`
   color: ${theme.colors.green};
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   font-size: 20vw;
   line-height: 1;
   @media screen and (min-width: 1200px) {

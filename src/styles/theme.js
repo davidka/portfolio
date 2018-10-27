@@ -28,20 +28,19 @@ const theme = {
   },
 
   fonts: {
-    Calibre:
-      'Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif',
-    SFMono: 'SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace',
+    SourceCodePro: 'Source Code Pro, monospace',
+    OpenSans: 'Open Sans, Roboto, Arial, sans-serif',
   },
 
   fontSizes: {
-    xsmall: '12px',
-    smallish: '13px',
-    small: '14px',
-    medium: '16px',
-    large: '18px',
-    xlarge: '20px',
+    xsmall: '14px',
+    smallish: '15px',
+    small: '15px',
+    medium: '17px',
+    large: '17px',
+    xlarge: '25px',
     xxlarge: '22px',
-    h3: '30px',
+    h3: '24px',
   },
 
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',

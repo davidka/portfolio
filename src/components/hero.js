@@ -21,7 +21,7 @@ const Hi = styled.h1`
   color: ${theme.colors.green};
   margin: 0 0 20px 3px;
   font-size: ${theme.fontSizes.medium};
-  font-family: ${theme.fonts.SFMono};
+  font-family: ${theme.fonts.SourceCodePro};
   font-weight: normal;
   ${media.desktop`font-size: ${theme.fontSizes.small};`};
   ${media.tablet`font-size: ${theme.fontSizes.smallish};`};
@@ -39,10 +39,10 @@ const Subtitle = styled.h3`
   font-size: 80px;
   line-height: 1.1;
   color: ${theme.colors.slate};
-  ${media.desktop`font-size: 70px;`};
-  ${media.tablet`font-size: 60px;`};
-  ${media.phablet`font-size: 50px;`};
-  ${media.phone`font-size: 40px;`};
+  ${media.desktop`font-size: 40px;`};
+  ${media.tablet`font-size: 40px;`};
+  ${media.phablet`font-size: 30px;`};
+  ${media.phone`font-size: 30px;`};
 `;
 const Blurb = styled.div`
   margin-top: 25px;
