@@ -54,7 +54,7 @@ class Layout extends Component {
   };
 
   state = {
-    isLoading: true,
+    isLoading: false,
   };
 
   finishLoading = () => this.setState({ isLoading: false });
