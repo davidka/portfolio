@@ -1,11 +1,9 @@
 import React from 'react';
 
-import { socialMedia } from '../config';
-
-import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from './icons';
-
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
+import { createSocialLinks } from '../utils/social-links';
 
 const FooterContainer = styled.footer`
   ${mixins.flexCenter};
@@ -38,47 +36,15 @@ const SocialLink = styled.a`
 const Copy = styled.p`
   margin: 5px 0 3px;
 `;
-const GithubLink = styled.a`
-  color: ${theme.colors.slate};
-  font-family: ${theme.fonts.SFMono};
-  font-size: ${theme.fontSizes.xsmall};
-`;
 
 const Footer = () => (
   <FooterContainer>
     <SocialContainer>
-      <SocialItemList>
-        {socialMedia &&
-          socialMedia.map(({ name, url }, i) => (
-            <SocialItem key={i}>
-              <SocialLink
-                href={url}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label={name}>
-                {name === 'Github' ? (
-                  <IconGithub />
-                ) : name === 'Linkedin' ? (
-                  <IconLinkedin />
-                ) : name === 'Instagram' ? (
-                  <IconInstagram />
-                ) : name === 'Twitter' ? (
-                  <IconTwitter />
-                ) : (
-                  <IconGithub />
-                )}
-              </SocialLink>
-            </SocialItem>
-          ))}
-      </SocialItemList>
+      <SocialItemList>{createSocialLinks(SocialItem, SocialLink)}</SocialItemList>
     </SocialContainer>
     <Copy>
-      <GithubLink
-        href="https://github.com/bchiang7/v4"
-        target="_blank"
-        rel="nofollow noopener noreferrer">
-        Designed &amp; Built by Brittany Chiang
-      </GithubLink>
+      <Link to="/imprint/">Imprint</Link>
+      2018 © All Rights Reserved.
     </Copy>
   </FooterContainer>
 );

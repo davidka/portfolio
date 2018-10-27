@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { socialMedia } from '../config';
-
-import {
-  IconGithub,
-  IconLinkedin,
-  IconInstagram,
-  IconTwitter,
-  IconKeybase,
-  IconXing,
-} from './icons';
-
 import styled from 'styled-components';
 import { theme, media } from '../styles';
+import { createSocialLinks } from '../utils/social-links';
 
 const SocialContainer = styled.div`
   width: 40px;
@@ -67,34 +57,7 @@ class Social extends Component {
         <TransitionGroup>
           {isMounted && (
             <CSSTransition timeout={3000} classNames="fade">
-              <SocialItemList>
-                {socialMedia &&
-                  socialMedia.map(({ url, name }, i) => (
-                    <SocialItem key={i}>
-                      <SocialLink
-                        href={url}
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        aria-label={name}>
-                        {name === 'Github' ? (
-                          <IconGithub />
-                        ) : name === 'Linkedin' ? (
-                          <IconLinkedin />
-                        ) : name === 'Instagram' ? (
-                          <IconInstagram />
-                        ) : name === 'Twitter' ? (
-                          <IconTwitter />
-                        ) : name === 'Keybase' ? (
-                          <IconKeybase />
-                        ) : name === 'Xing' ? (
-                          <IconXing />
-                        ) : (
-                          <IconGithub />
-                        )}
-                      </SocialLink>
-                    </SocialItem>
-                  ))}
-              </SocialItemList>
+              <SocialItemList>{createSocialLinks(SocialItem, SocialLink)}</SocialItemList>
             </CSSTransition>
           )}
         </TransitionGroup>
