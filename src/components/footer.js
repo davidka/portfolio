@@ -35,6 +35,7 @@ const SocialLink = styled.a`
 `;
 const Copy = styled.p`
   margin: 5px 0 3px;
+  font-size: ${theme.fontSizes.xsmall};
 `;
 
 const Footer = () => (
@@ -44,7 +45,6 @@ const Footer = () => (
     </SocialContainer>
     <Copy>
       <Link to="/imprint/">Imprint</Link>
-      2018 © All Rights Reserved.
     </Copy>
   </FooterContainer>
 );
