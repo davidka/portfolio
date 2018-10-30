@@ -10,7 +10,9 @@ module.exports = {
   googleVerification: '1aWqJQFJZbSj1ouflqWfBr6_bbCDf9VRmku3YQWCT9M',
 
   name: 'David Hahn',
-  location: 'Bramsche, Germany',
+  street: 'Hemke 5c',
+  location: 'D-49565 Bramsche',
+  mobile: '+49 (0) 176 / 7685 1939',
   email: 'info@davidhahn.software',
   socialMedia: [
     {
