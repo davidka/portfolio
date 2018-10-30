@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import { mixins, media, Section, Heading, Main } from '../styles';
-import { name, email, location, street, mobile } from '../config';
 
 const ImprintContainer = styled(Main)`
   ${mixins.sidePadding};
@@ -29,40 +28,23 @@ const ContentContainer = styled.div`
   }
 `;
 
-const ImprintHeader = styled(Heading)`
+const DataPrivacyHeader = styled(Heading)`
   &:before {
     content: '';
     margin-right: 0;
   }
 `;
 
-const NameContainer = styled.p`
-  font-weight: bold;
-`;
-
-const PersonalDataContainer = styled.p`
-  margin-bottom: 100px;
-`;
-
-const ImprintPage = ({ data }) => {
+const DataPrivacyPage = ({ data }) => {
   const { frontmatter, html } = data.imprint.edges[0].node;
 
   return (
     <Layout>
-      <ImprintContainer id="imprint">
+      <ImprintContainer id="data-privacy">
         <SectionContainer>
-          <ImprintHeader>{frontmatter.title}</ImprintHeader>
+          <DataPrivacyHeader>{frontmatter.title}</DataPrivacyHeader>
           <FlexContainer>
             <ContentContainer>
-              <PersonalDataContainer>
-                <NameContainer>{name}</NameContainer>
-                <p>{street}</p>
-                <p>{location}</p>
-                <br />
-                <p>Mobil: {mobile}</p>
-                <p>E-Mail: {email}</p>
-              </PersonalDataContainer>
-
               <p dangerouslySetInnerHTML={{ __html: html }} />
             </ContentContainer>
           </FlexContainer>
@@ -72,15 +54,15 @@ const ImprintPage = ({ data }) => {
   );
 };
 
-ImprintPage.propTypes = {
+DataPrivacyPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default ImprintPage;
+export default DataPrivacyPage;
 
 export const pageQuery = graphql`
-  query ImprintQuery {
-    imprint: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/imprint/" } }) {
+  query DataPrivacyQuery {
+    imprint: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/data-privacy/" } }) {
       edges {
         node {
           frontmatter {

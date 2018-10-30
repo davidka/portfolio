@@ -58,6 +58,8 @@ module.exports = {
 
   twitterHandle: '@davidkah',
 
+  googleAnalyticsID: 'UA-128412557-1',
+
   headerHeight: 100,
 
   greenColor: '#64ffda',

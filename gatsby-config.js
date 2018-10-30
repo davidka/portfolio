@@ -61,5 +61,12 @@ module.exports = {
         fonts: [`roboto`, `source code pro`, `open sans`],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: config.googleAnalyticsID,
+        anonymize: true,
+      },
+    },
   ],
 };

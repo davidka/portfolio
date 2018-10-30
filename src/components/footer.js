@@ -44,7 +44,8 @@ const Footer = () => (
       <SocialItemList>{createSocialLinks(SocialItem, SocialLink)}</SocialItemList>
     </SocialContainer>
     <Copy>
-      <Link to="/imprint/">Imprint</Link>
+      <Link to="/imprint/">Imprint</Link> &nbsp;|&nbsp;
+      <Link to="/data-privacy/">Data Privacy</Link> &nbsp;
     </Copy>
   </FooterContainer>
 );
