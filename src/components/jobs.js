@@ -10,7 +10,7 @@ import ScrollReveal from 'scrollreveal';
 
 const JobsContainer = styled(Section)`
   position: relative;
-  max-width: 700px;
+  /* max-width: 700px; */
 `;
 const TabsContainer = styled.div`
   display: flex;
