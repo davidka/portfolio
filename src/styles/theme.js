@@ -29,7 +29,8 @@ const theme = {
 
   fonts: {
     SourceCodePro: 'Source Code Pro, monospace',
-    OpenSans: 'Open Sans, Roboto, Arial, sans-serif',
+    OpenSans: 'Open Sans, Arial, sans-serif',
+    Roboto: 'Roboto, Arial, sans-serif',
   },
 
   fontSizes: {

@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.navy};
     color: ${theme.colors.slate};
     line-height: 1.25;
-    font-family: ${theme.fonts.OpenSans};
+    font-family: ${theme.fonts.Roboto};
     font-size: ${theme.fontSizes.large};
     ${media.phablet`font-size: ${theme.fontSizes.large};`}
 
@@ -53,6 +53,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5 {
     font-weight: 700;
+    font-family: ${theme.fonts.OpenSans};
     color: ${theme.colors.white};
     margin: 0 0 10px 0;
   }
