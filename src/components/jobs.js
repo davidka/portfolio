@@ -52,7 +52,9 @@ const Tab = styled.button`
     text-align: center;
     border-left: 0;
     border-bottom: 2px solid ${theme.colors.darkGrey};
-    min-width: 120px;
+    /* min-width: 120px; */
+    /* overflow-x: hidden; */
+    /* width: auto; */
   `};
   &:hover,
   &:focus {
