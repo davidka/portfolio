@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://davidhahn.software/sitemap.xml
+Host: https://davidhahn.software
