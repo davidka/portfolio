@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/david-hahn-2b677383/',
+      url: 'https://www.linkedin.com/in/davidkah/',
     },
     {
       name: 'Xing',
