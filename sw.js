@@ -26,26 +26,26 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-8aefb34e348530eeca06.js"
+    "url": "webpack-runtime-8cb913b8b4b62d14d662.js"
   },
   {
-    "url": "app-00b216d4f89c3035088d.js"
+    "url": "app-0f5b9f2ca5b4dbc1f745.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-3f4d8e39b9f1ff24c820.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-29e6d051acd95a756f66.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4edaaeaffa376b55572a83d3aa60423e"
+    "revision": "84ecb95835b25027fa5a323694f1fbe8"
   },
   {
-    "url": "0-7f1122eaa45b501bbdc2.js"
+    "url": "0-5261ce03c4ce1ef8375a.js"
   },
   {
-    "url": "1-43421c6edeaecc843f31.js"
+    "url": "1-5f7efc00e016b834e921.js"
   },
   {
-    "url": "component---src-pages-404-js-c8ca92bed9aa00189b80.js"
+    "url": "component---src-pages-404-js-b58320a3e001483dfe0c.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -88,6 +88,24 @@ var navigationRoute = new workbox.routing.NavigationRoute(function (_ref) {
       var cacheName = workbox.core.cacheNames.precache;
       return caches.match(offlineShell, {
         cacheName: cacheName
+      }).then(function (cachedResponse) {
+        if (!cachedResponse) {
+          return fetch(offlineShell).then(function (response) {
+            if (response.ok) {
+              return caches.open(cacheName).then(function (cache) {
+                return (// Clone is needed because put() consumes the response body.
+                  cache.put(offlineShell, response.clone()).then(function () {
+                    return response;
+                  })
+                );
+              });
+            } else {
+              return fetch(event.request);
+            }
+          });
+        }
+
+        return cachedResponse;
       });
     }
 
