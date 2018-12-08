@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import config from '../config';
 
-import logo from '../images/logo.png';
 import appleIcon57x57 from '../images/favicons/apple-icon-57x57.png';
 import appleIcon60x60 from '../images/favicons/apple-icon-60x60.png';
 import appleIcon72x72 from '../images/favicons/apple-icon-72x72.png';
@@ -25,7 +24,21 @@ const Head = ({ metaData }) => (
     <title itemProp="name" lang="en">
       {metaData.title}
     </title>
-    <link rel="icon" type="image/png" href={logo} />
+    <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
+    <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
+    <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />
+    <link rel="apple-touch-icon" sizes="76x76" href={appleIcon76x76} />
+    <link rel="apple-touch-icon" sizes="114x114" href={appleIcon114x114} />
+    <link rel="apple-touch-icon" sizes="120x120" href={appleIcon120x120} />
+    <link rel="apple-touch-icon" sizes="144x144" href={appleIcon144x144} />
+    <link rel="apple-touch-icon" sizes="152x152" href={appleIcon152x152} />
+    <link rel="apple-touch-icon" sizes="180x180" href={appleIcon180x180} />
+    <link rel="icon" type="image/png" sizes="192x192" href={androidIcon192x192} />
+    <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
+    <link rel="icon" type="image/png" sizes="96x96" href={favicon96x96} />
+    <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
+    <meta name="msapplication-TileImage" content={msIcon144x144} />
+
     <meta name="description" content={metaData.description} />
     <meta name="keywords" content={config.siteKeywords} />
     <meta name="google-site-verification" content={config.googleVerification} />
@@ -50,7 +63,33 @@ const Head = ({ metaData }) => (
     <meta name="twitter:description" content={metaData.description} />
     <meta name="twitter:image:src" content={config.siteImage} />
     <meta name="twitter:image:alt" content={metaData.title} />
+    <meta name="msapplication-TileColor" content={config.navyColor} />
+    <meta name="theme-color" content={config.navyColor} />
+  </Helmet>
+);
+/*
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
+
+*/
+
+/*
     <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
     <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
     <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />
@@ -64,11 +103,8 @@ const Head = ({ metaData }) => (
     <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
     <link rel="icon" type="image/png" sizes="96x96" href={favicon96x96} />
     <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
-    <meta name="msapplication-TileColor" content={config.navyColor} />
     <meta name="msapplication-TileImage" content={msIcon144x144} />
-    <meta name="theme-color" content={config.navyColor} />
-  </Helmet>
-);
+*/
 
 export default Head;
 

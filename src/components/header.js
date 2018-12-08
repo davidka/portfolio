@@ -3,14 +3,14 @@ import Helmet from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { throttle } from '../utils';
 
 import { headerHeight } from '../config';
 import resume from '../images/resume_de.pdf';
 
 import Menu from '../components/menu';
-import { IconLogo } from './icons';
+// import { IconLogo } from './icons';
 
 import styled from 'styled-components';
 import { theme, mixins, media, Nav } from '../styles';
@@ -45,25 +45,25 @@ const Navbar = styled(Nav)`
   position: relative;
   z-index: 12;
 `;
-const Logo = styled.div`
-  ${mixins.flexCenter};
-`;
-const LogoLink = styled(Link)`
-  color: ${theme.colors.green};
-  width: 42px;
-  height: 42px;
-  &:hover,
-  &:focus {
-    svg {
-      fill: ${theme.colors.transGreen};
-    }
-  }
-  svg {
-    fill: none;
-    transition: ${theme.transition};
-    user-select: none;
-  }
-`;
+// const Logo = styled.div`
+//   ${mixins.flexCenter};
+// `;
+// const LogoLink = styled(Link)`
+//   color: ${theme.colors.green};
+//   width: 42px;
+//   height: 42px;
+//   &:hover,
+//   &:focus {
+//     svg {
+//       fill: ${theme.colors.transGreen};
+//     }
+//   }
+//   svg {
+//     fill: none;
+//     transition: ${theme.transition};
+//     user-select: none;
+//   }
+// `;
 const Hamburger = styled.div`
   ${mixins.flexCenter};
   overflow: visible;
@@ -258,7 +258,7 @@ class Header extends Component {
           <body className={menuOpen ? 'blur' : ''} />
         </Helmet>
         <Navbar>
-          <TransitionGroup>
+          {/* <TransitionGroup>
             {isMounted && (
               <CSSTransition classNames="fade" timeout={3000}>
                 <Logo>
@@ -268,7 +268,7 @@ class Header extends Component {
                 </Logo>
               </CSSTransition>
             )}
-          </TransitionGroup>
+          </TransitionGroup> */}
 
           <TransitionGroup>
             {isMounted && (
@@ -299,7 +299,7 @@ class Header extends Component {
               </NavList>
             )}
             <TransitionGroup>
-              {isMounted && (
+              {isHome && isMounted && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <ResumeButton style={{ transitionDelay: `600ms` }}>
                     <ResumeLink href={resume} target="_blank" rel="nofollow noopener noreferrer">
