@@ -40,7 +40,7 @@ const NameContainer = styled.p`
   font-weight: bold;
 `;
 
-const PersonalDataContainer = styled.p`
+const PersonalDataContainer = styled.div`
   margin-bottom: 100px;
 `;
 
