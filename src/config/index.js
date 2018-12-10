@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'David Hahn | Passionated Software Engineer',
-  siteDescription: 'Passionated Software Engineer. Freelancer. Smarthome Enthusiast.',
+  siteTitle: 'David Hahn | Passionate Software Engineer',
+  siteDescription: 'Passionate Software Engineer. Smarthome Enthusiast. Freelancer.',
   siteKeywords:
     'David Hahn, David, Hahn, davidka, software engineer, front-end engineer, web developer, javascript, germany',
   siteUrl: 'https://davidhahn.software',
