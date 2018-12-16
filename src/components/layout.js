@@ -10,9 +10,10 @@ import Email from '../components/email';
 import Footer from '../components/footer';
 
 import { nav } from '../config';
-
 import styled from 'styled-components';
 import { GlobalStyle, theme } from '../styles';
+
+import CookieBanner from './cookie-banner';
 
 const SkipToContent = styled.a`
   position: absolute;
@@ -93,6 +94,7 @@ class Layout extends Component {
                 <Email />
                 {children}
                 <Footer />
+                <CookieBanner />
               </div>
             )}
           </div>
