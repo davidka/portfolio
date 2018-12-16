@@ -37,7 +37,7 @@ const Name = styled.h2`
 `;
 const Subtitle = styled.h3`
   font-size: 50px;
-  line-height: 1.1;
+  line-height: 1.2;
   color: ${theme.colors.slate};
   ${media.desktop`font-size: 40px;`};
   ${media.tablet`font-size: 40px;`};
