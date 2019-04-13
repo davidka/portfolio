@@ -57,7 +57,6 @@ const PicContainer = styled.div`
 `;
 const Avatar = styled(Img)`
   position: relative;
-  mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
@@ -66,7 +65,6 @@ const AvatarContainer = styled.div`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${theme.colors.green};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -77,7 +75,6 @@ const AvatarContainer = styled.div`
     }
     ${Avatar} {
       filter: none;
-      mix-blend-mode: normal;
     }
   }
   &:before,
