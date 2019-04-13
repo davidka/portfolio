@@ -63,7 +63,7 @@ const ImprintPage = ({ data }) => {
                 <p>E-Mail: {email}</p>
               </PersonalDataContainer>
 
-              <p dangerouslySetInnerHTML={{ __html: html }} />
+              <div dangerouslySetInnerHTML={{ __html: html }} />
             </ContentContainer>
           </FlexContainer>
         </SectionContainer>

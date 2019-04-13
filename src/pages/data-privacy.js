@@ -45,7 +45,7 @@ const DataPrivacyPage = ({ data }) => {
           <DataPrivacyHeader>{frontmatter.title}</DataPrivacyHeader>
           <FlexContainer>
             <ContentContainer>
-              <p dangerouslySetInnerHTML={{ __html: html }} />
+              <div dangerouslySetInnerHTML={{ __html: html }} />
             </ContentContainer>
           </FlexContainer>
         </SectionContainer>
