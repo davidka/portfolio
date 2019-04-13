@@ -1,6 +1,6 @@
 # Portfolio
 
-My portfolio built with [Gatsby](https://www.gatsbyjs.org/). Based on work of @bchiang7 https://princeodame.com/
+My portfolio built with [Gatsby](https://www.gatsbyjs.org/). Based on work of @bchiang7
 
 > 📢 **PSA for those who want to fork or copy this repo and use it for their own site:**
 >
